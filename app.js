@@ -1,14 +1,17 @@
-const usability = require('./functions');
+const usability = require('./functions.js');
 
 
-const writeHere = process.argv[2];
-const titleTarea = process.argv[3];
-const statusTarea = process.argv[4];
-const estadoParaFiltrar = process.argv[3];
-const showList = (word) => {
-    switch (writeHere) {
+let opcion = process.argv[2];
+let titleTarea = process.argv[3];
+let statusTarea = process.argv[4];
+let estadoParaFiltrar = process.argv[3];
+
+
+
+    switch (opcion) {
         case "crear":
             usability.guardarTarea(titleTarea, statusTarea);
+            console.log("Tarea agregada");
              break;
         case "listar" :
             usability.showTasks();
@@ -20,10 +23,11 @@ const showList = (word) => {
             console.log('Atención - Tienes que pasar una acción.');
             break;
         default :
-            console.log('No entiendo qué quieres hacer.')
+            console.log('No entiendo qué quieres hacer.');
+            break;
     }
-}
 
 
-console.log("Tarea agregada");
+
+
 

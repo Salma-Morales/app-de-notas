@@ -10,5 +10,9 @@
     {
         "title": "dormir",
         "taskStatus": "listo"
+    },
+    {
+        "title": "tarea",
+        "taskStatus": "pendiente"
     }
 ]
