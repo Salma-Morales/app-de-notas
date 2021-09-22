@@ -17,7 +17,7 @@ let estadoParaFiltrar = process.argv[3];
             usability.showTasks();
             break;
         case "filtrar" :
-            usability.filtrarPorEstado(estadoParaFiltrar);
+            console.log(usability.filtrarPorEstado(estadoParaFiltrar));
             break;
         case undefined :
             console.log('Atención - Tienes que pasar una acción.');

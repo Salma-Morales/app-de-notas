@@ -22,7 +22,6 @@ function bringTasks(){
 }
 
 
-
 // listar las tareas
 const showTasks = () => {
     db.forEach(function(elemento){
